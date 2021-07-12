@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    
+
+    <div class = "container">
+        <div class="title">SIGN-UP</div>
+        <form action=""  method="POST">
+
+
+
+
+
+            <div class="user-details"> 
+                    <!--1. full name-->
+                <div class="input-box">
+                    <span class="details"><label for="fname">Full Name</label></span>
+                    <input type="text"  placeholder="Enter your name"   id ="fname"  name="fname" required>
+              </div>
+              <!--email-->
+
+              <div class="input-box">
+                     <span class="details"><label for="email">Email</label></span>
+                     <input type="text"  placeholder="Enter your email"  id ="email"  name="email" required>
+                </div>
+
+              <!-- mobile number-->
+                <div class="input-box">
+                    <span class="details"><label for="number"> Phone Number</label> </span>
+                    <input type="text"  placeholder="Enter your phone number"  id="number" name="number" required>
+               </div>
+               <!-- branch-->
+               <div class="input-box">
+                 <span class="details"><label for="branch">Branch</label></span>
+                  <input type="text"  placeholder="Enter your branch" id="branch" name="branch" required>
+               </div>
+               <!-- Wings-->
+                <div>
+                    
+                    <input type="radio" id="Hardware" name="fav_wing" value="Hardware" class="radio-input">
+                    
+                    <label for="Hardware"  class="radio"> Hardware</label>
+                    
+                    <input type="radio" id="Software" name="fav_wing" value="Software"  class="radio-input">
+                    
+                     <label for="Software" class="radio"> Software</label>
+                    
+                    <input type="radio" id="Design" name="fav_wing" value="Design"  class="radio-input">
+                    <label for="Design" class="radio">Design</label>
+                    
+                    
+                        
+               </div>
+
+
+
+
+
+               <!-- skill-->
+               
+               <div class="input-box">
+                     <span class="details">Skill</span>
+                     <input list="Skill" name="Skill" placeholder="Skill" required>
+                            <datalist id="Skill">
+                                  <option value="HTML">
+                                 <option value="CSS">
+                                 <option value="JAVASCRIPT">
+                                
+                                
+                            </datalist>
+               </div>
+
+               <!--password-->
+               <div class="input-box">
+                   <span class="details"><label for="pwd">Password</label></span>
+                    <input type="password"  placeholder="Password" id="pwd" name="pwd"  required>
+               </div>
+               <!--confiem password-->
+
+               <div class="input-box">
+                    <span class="details"><label for="cpwd">Confirm Password</label></span>
+                     <input type="password"  placeholder="Confirm Password" id="cpwd"  name="cpwd" required>
+                 </div>
+
+            </div>
+
+
+
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+       
+        </form>
+
+       
+
+        
+
+
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+</html>
